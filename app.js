@@ -12,7 +12,7 @@ function getWeatherData() {
 function setWeatherData(data) {
   const city = document.querySelector(".city");
   const icon = document.querySelector(".icon");
-  const temp = document.querySelector(".temp");
+  const temp = document.querySelector(".temp-value");
   const weatherType = document.querySelector(".weather-type");
 
   city.innerHTML = data.name;
