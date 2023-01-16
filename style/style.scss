@@ -1,15 +1,54 @@
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+.container {
+  background: linear-gradient(45deg, #0e0e11, #25272f);
+  max-width: 200px;
+  border: 1px #f1f1f1 solid;
+  border-radius: 20px;
+  margin: 100px auto;
+  padding: 15px;
+}
+
 .main {
-  background-color: #1f1f1f;
+  height: 100vh;
+  color: #f1f1f1;
   .city {
+    font-size: 30px;
+    text-align: center;
+    line-height: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
   }
-  .icon {
-  }
-  .temp {
-  }
-  .temp-units {
+
+  .main-weather {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+    .icon {
+      width: 50px;
+    }
+    .temp {
+      display: flex;
+      .temp-value {
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .temp-units {
+        padding-left: 4px;
+        font-size: 20px;
+      }
+    }
   }
   .weather-type {
+    text-align: center;
+    font-size: 16px;
   }
-}
-.container {
 }
