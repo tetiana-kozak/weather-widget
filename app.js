@@ -17,11 +17,10 @@ function setWeatherData(data) {
 
   city.innerHTML = data.name;
 
-  if (data.weather[0].icon === "10d") {
-    icon.setAttribute("src", "https://openweathermap.org/img/w/10d.png");
-  } else {
-    icon.setAttribute("src", "https://openweathermap.org/img/w/10n.png");
-  }
+  icon.setAttribute(
+    "src",
+    `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
+  );
 
   temp.innerHTML = Math.round(data.main.temp);
   weatherType.innerHTML = data.weather[0].description;
