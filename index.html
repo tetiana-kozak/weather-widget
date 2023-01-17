@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather widget</title>
+    <link rel="shortcut icon" href="https://openweathermap.org/img/w/10d.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,11 +22,34 @@
         <div class="main-weather">
           <img class="icon" src="" alt="" />
           <div class="temp">
-            <div class="temp-value"></div>
+            <h2 class="temp-value"></h2>
             <span class="temp-units">°C</span>
           </div>
         </div>
-        <div class="weather-type"></div>
+        <h3 class="weather-type"></h3>
+        <div class="weather-details">
+          <div class="param">
+            <h5 class="name">Wind</h5>
+            <div class="details">
+              <h4 class="value">10</h4>
+              <span class="units">m/s</span>
+            </div>
+          </div>
+          <div class="param">
+            <h5 class="name">Humidity</h5>
+            <div class="details">
+              <h4 class="value">10</h4>
+              <span class="units">%</span>
+            </div>
+          </div>
+          <div class="param">
+            <h5 class="name">Feels like</h5>
+            <div class="details">
+              <h4 class="value">10</h4>
+              <span class="units">°C</span>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 

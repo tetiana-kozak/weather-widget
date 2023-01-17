@@ -9,7 +9,7 @@ body {
 
 .container {
   background: linear-gradient(45deg, #0e0e11, #25272f);
-  max-width: 200px;
+  max-width: 300px;
   border: 1px #f1f1f1 solid;
   border-radius: 20px;
   margin: 100px auto;
@@ -30,24 +30,49 @@ body {
 .main .main-weather {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 0 30px;
+  justify-content: center;
 }
 .main .main-weather .icon {
   width: 50px;
+  margin-right: 10px;
 }
 .main .main-weather .temp {
   display: flex;
 }
 .main .main-weather .temp .temp-value {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
 }
 .main .main-weather .temp .temp-units {
   padding-left: 4px;
-  font-size: 20px;
+  font-size: 28px;
+  color: #b9b9b9;
 }
 .main .weather-type {
   text-align: center;
   font-size: 16px;
+  line-height: 21px;
+}
+.main .weather-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.main .weather-details .param .name {
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.main .weather-details .param .details {
+  display: flex;
+  justify-content: center;
+}
+.main .weather-details .param .details .value {
+  margin-right: 4px;
+  font-size: 24px;
+}
+.main .weather-details .param .details .units {
+  font-size: 18px;
+  color: #b9b9b9;
 }/*# sourceMappingURL=style.css.map */
