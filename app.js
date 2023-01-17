@@ -14,6 +14,9 @@ function setWeatherData(data) {
   const icon = document.querySelector(".icon");
   const temp = document.querySelector(".temp-value");
   const weatherType = document.querySelector(".weather-type");
+  const windSpeedValue = document.querySelector(".wind-speed-value");
+  const humidityValue = document.querySelector(".humidity-value");
+  const pressureValue = document.querySelector(".pressure-value");
 
   city.innerHTML = data.name;
 
@@ -24,9 +27,9 @@ function setWeatherData(data) {
 
   temp.innerHTML = Math.round(data.main.temp);
   weatherType.innerHTML = data.weather[0].description;
-  // console.log("data.name :>> ", data.name);
-  // console.log("data.temp :>> ", Math.round(data.main.temp));
-  // console.log("data.weather.main :>> ", data.weather[0].main);
+  windSpeedValue.innerHTML = data.wind.speed;
+  humidityValue.innerHTML = data.main.humidity;
+  pressureValue.innerHTML = data.main.pressure;
 }
 
 getWeatherData();
