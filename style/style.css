@@ -18,7 +18,7 @@ body {
 .main {
   height: calc(100vh - 100px);
   color: #f1f1f1;
-  margin: 0 10px;
+  margin: 0 12px;
 }
 .main .city {
   font-size: 42px;
